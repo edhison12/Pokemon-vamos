@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+#gameArea {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/mundo-paleta.jpg'); /* Fondo del Mundo Paleta */
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Imagen de fondo adicional dentro del área de juego */
+#backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('p02_01.jpg'); /* Imagen de fondo adicional */
+    background-size: cover;
+    z-index: 1; /* Asegura que el fondo esté detrás del personaje */
+}
+
+#pokemon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('pokemon.gif'); /* GIF de Pikachu */
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Asegura que Pikachu esté encima del fondo */
+}
+background-image: url('images/paisaje.jpg');
